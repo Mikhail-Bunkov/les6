@@ -8,6 +8,9 @@ public class Cat extends Animal {
         super(color, age, name);
         iterator++;
     }
+    public static int getIterator() {
+        return iterator;
+    }
 
     @Override
     public void run(int distance) {
@@ -18,6 +21,16 @@ public class Cat extends Animal {
             {
             super.run(distance);
         }
+    }
 
+    @Override
+    public void swim(int distance) {
+        if (true)
+        {
+            System.out.println("Котэ уверенно пошел ко дну");
+        }else
+        {
+            super.swim(distance);;
+        }
     }
 }

@@ -5,6 +5,7 @@ public class Animal {
     private int age;
     private String name;
     private static int iterator;
+
     public Animal(String color, int age, String name)
     {
         this.color = color;
@@ -14,6 +15,13 @@ public class Animal {
     }
     public void run(int distance)
     {
-        System.out.println(name + " пробежал "+ distance);
+        System.out.println(name + " пробежало "+ distance);
+    }
+    public void swim(int distance)
+    {
+        System.out.println(name + " проплыло "+ distance);
+    }
+    public static int getIterator() {
+        return iterator;
     }
 }
